@@ -33,8 +33,8 @@ def hh_parser(base_url,headers):
     else:
         print('ERROR')
 
-
-base_url='https://nn.hh.ru/search/vacancy?area=66&text=c%2B%2B+intern&page=0'
+search_line=input('Введите поисковый запрос:')
+base_url=f'https://nn.hh.ru/search/vacancy?area=66&text={search_line}&page=0'
 hh_parser(base_url,headers)
 table=pt(['Company','Position','Link'])
 while Job:
