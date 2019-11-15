@@ -40,5 +40,7 @@ table=pt(['Company','Position','Link'])
 while Job:
     table.add_row(Job[:3])
     Job=Job[3:]
+file=open('Job.txt','w')
+file.write(str(table))
 print(table)
 
